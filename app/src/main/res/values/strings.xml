@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CurrencyConvertor</string>
+    <string name="title_activity_display">Conversion Results</string>
+    <string name="title_error_no_network">No Network</string>
+    <string name="title_about">About</string>
+    <string name="message_error_no_network">You must have a working internet connection!</string>
+    <string name="message_about">Author: Ujjawal Anand, \nDeveloped for Smart Technologies \nLast Updated:\n%1$s</string>
+    <string name="spinner_from_title">From</string>
+    <string name="spinner_to_title">To</string>
+</resources>

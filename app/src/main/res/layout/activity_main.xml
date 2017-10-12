@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+              tools:context=".activity.MainActivity">
+
+   <ProgressBar
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:id="@+id/progress_loading"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:text="Enter Conversion Amount"/>
+
+    <EditText
+            android:id="@+id/edit_amount"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter Amount"
+            android:paddingBottom="16dp"/>
+
+   <!-- <TextView android:layout_width="match_parent"
+              android:layout_marginTop="8dp"
+              android:layout_height="wrap_content"
+              style="?android:attr/listSeparatorTextViewStyle"
+              android:text="Choose A Currency"/>
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From : "
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+ <Spinner
+     android:id="@+id/spinner_from"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="20dp"
+     android:layout_marginStart="20dp"
+     android:prompt="@string/spinner_from_title"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To : "
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+ <Spinner
+     android:id="@+id/spinner_to"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="20dp"
+     android:layout_marginStart="20dp"
+     android:prompt="@string/spinner_to_title"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_convert"
+        android:layout_gravity="center"
+        android:text="Convert" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <!--<SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_filter"
+            android:iconifiedByDefault="false"
+            android:queryHint="Filter Currencies"/>
+
+
+    <ListView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:id="@+id/list_currencies"
+            android:drawSelectorOnTop="true"
+            android:fadeScrollbars="false"
+            android:layout_height="wrap_content"/>
+-->
+
+</LinearLayout>
